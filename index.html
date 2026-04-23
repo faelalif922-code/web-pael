@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Rafael Alif - Siswa TKJ yang passion di dunia jaringan & web">
+    <title>Rafael Alif | Jyujyur Mantap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-white overflow-x-hidden">
+    <!-- NAVBAR -->
+    <nav class="bg-slate-900/95 backdrop-blur-md border-b border-cyan-500/20 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <!-- Logo / Nama -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-blue-400 to-white600 rounded-2xl flex items-center justify-center text-xl shadow-inner">
+                    💻
+                </div>
+                <h1 class="text-2xl font-bold tracking-tighter tex-white-300">Rafael Alif Ramadhan</h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#beranda" onclick="smoothScrollTo('beranda')" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+                    <i class="fas fa-home"></i> Beranda
+                </a>
+                <a href="#tentang" onclick="smoothScrollTo('tentang')" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+                    <i class="fas fa-user"></i> Tentang Saya
+                </a>
+                <a href="#keahlian" onclick="smoothScrollTo('keahlian')" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+                    <i class="fas fa-tools"></i> Keahlian
+                </a>
+                <a href="#portofolio" onclick="smoothScrollTo('portofolio')" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+                    <i class="fas fa-briefcase"></i> Portofolio
+                </a>
+                <a href="#pengalaman" onclick="smoothScrollTo('pengalaman')" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+                    <i class="fas fa-history"></i> Pengalaman
+                </a>
+                <a href="#kontak" onclick="smoothScrollTo('kontak')" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+                    <i class="fas fa-envelope"></i> Kontak
+                </a>
+            </div>
+
+            <!-- Tombol Mobile -->
+            <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-300 hover:text-cyan-400 transition-colors">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-cyan-500/20 px-6 py-6">
+            <div class="flex flex-col gap-6 text-lg">
+                <a href="#beranda" onclick="toggleMobileMenu()" class="flex items-center gap-3 hover:text-cyan-400"><i class="fas fa-home w-6"></i> Beranda</a>
+                <a href="#tentang" onclick="toggleMobileMenu()" class="flex items-center gap-3 hover:text-cyan-400"><i class="fas fa-user w-6"></i> Tentang Saya</a>
+                <a href="#keahlian" onclick="toggleMobileMenu()" class="flex items-center gap-3 hover:text-cyan-400"><i class="fas fa-tools w-6"></i> Keahlian</a>
+                <a href="#portofolio" onclick="toggleMobileMenu()" class="flex items-center gap-3 hover:text-cyan-400"><i class="fas fa-briefcase w-6"></i> Portofolio</a>
+                <a href="#pengalaman" onclick="toggleMobileMenu()" class="flex items-center gap-3 hover:text-cyan-400"><i class="fas fa-history w-6"></i> Pengalaman</a>
+                <a href="#kontak" onclick="toggleMobileMenu()" class="flex items-center gap-3 hover:text-cyan-400"><i class="fas fa-envelope w-6"></i> Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BERANDA / HERO -->
+    <section id="beranda" class="min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-[radial-gradient(at_bottom_right,#0ea5e9_0%,transparent_70%)] opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10 pt-16">
+            <!-- Teks Kiri -->
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-6 py-2 rounded-3xl text-sm font-medium border border-cyan-300/30">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    Kiaracondong, Kota Bandung
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold leading-none tracking-tighter">
+                    Hai, saya<br><span class="bg-gradient-to-r from-cyan-300 via-blue-300 to-cyan-400 bg-clip-text text-transparent">Rafael Alif Ramadhan</span>
+                </h1>
+                
+                <p class="text-2xl md:text-3xl text-cyan-200">
+                    Siswa SMK Jurusan Teknik Komputer dan Jaringan (TKJ).
+                </p>
+                
+                <p class="max-w-md text-lg text-slate-300">
+                    Memiliki semangat tinggi untuk terus belajar dan meningkatkan kemampuan diri. 
+                    Terbiasa bekerja rapi, disiplin, dan fokus, serta mengutamakan hasil yang maksimal. 
+                    Siap berkembang dan menghadapi tantangan baru.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a onclick="smoothScrollTo('portofolio')" 
+                       class="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-500 hover:to-blue-700 px-9 py-5 rounded-3xl font-semibold text-lg flex items-center gap-3 shadow-xl shadow-cyan-500/30 transition-all hover:scale-105">
+                        <i class="fas fa-briefcase"></i>
+                        Lihat Portofolio
+                    </a>
+                    <a onclick="smoothScrollTo('kontak')" 
+                       class="border-2 border-white/70 hover:border-cyan-300 px-9 py-5 rounded-3xl font-semibold text-lg flex items-center gap-3 transition-all hover:scale-105">
+                        <i class="fas fa-paper-plane"></i>
+                        Hubungi Saya
+                    </a>
+                </div>
+
+                <!-- Social Proof -->
+                <div class="flex items-center gap-8 text-sm">
+                    <div>
+                        <span class="block text-cyan-300 font-bold text-4xl">100+</span>
+                        <span class="text-slate-400">Proyek/Tugas </span>
+                    </div>
+                    <div>
+                        <span class="block text-cyan-300 font-bold text-4xl">4</span>
+                        <span class="text-slate-400">Sertifikasi </span>
+                    </div>
+                    <div class="h-12 w-px bg-white/20"></div>
+                    <a href="https://www.tiktok.com/@nameisell_" target="_blank" class="flex items-center gap-2 hover:text-cyan-300">
+                        <i class="fab fa-tiktok text-3xl"></i>
+                        <span class="text-sm">Lihat Tiktok</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <!-- Foto Diri Kamu -->
+            <div class="flex justify-center">
+                <img src="images/foto-saya.jpeg" 
+                     alt="Rafael Alif"
+                     class="w-80 md:w-96 rounded-3xl shadow-2xl shadow-cyan-500/50 border-8 border-white/20 object-cover hover:rotate-3 transition-transform duration-500">
+            </div>
+                
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center gap-1 text-xs tracking-widest text-cyan-300/70">
+            SCROLL UNTUK MELANJUT
+            <i class="fas fa-chevron-down animate-bounce text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="tentang" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-4">Tentang Saya</h2>
+            <p class="text-center text-cyan-200 max-w-md mx-auto mb-16">Kenali lebih dekat siapa saya dan apa yang saya lakukan</p>
+
+            <div class="grid md:grid-cols-12 gap-10">
+                <!-- Data Diri -->
+                <div class="md:col-span-5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+                    <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3"><i class="fas fa-id-card"></i> Data Diri</h3>
+                    <div class="space-y-6">
+                        <div class="flex justify-between border-b border-white/10 pb-4">
+                            <span class="text-slate-400">Nama Lengkap</span>
+                            <span class="font-medium">Rafael Alif Ramadhan</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/10 pb-4">
+                            <span class="text-slate-400">Umur</span>
+                            <span class="font-medium">17 Tahun</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/10 pb-4">
+                            <span class="text-slate-400">Sekolah</span>
+                            <span class="font-medium">SMK Negeri 13Bandung</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/10 pb-4">
+                            <span class="text-slate-400">Jurusan</span>
+                            <span class="font-medium">Teknik Komputer dan Jaringan (TKJ)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Alamat</span>
+                            <span class="font-medium">Kiaracondong, Kota Bandung , Jawa Barat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deskripsi + Minat + Cita-cita -->
+                <div class="md:col-span-7 space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Deskripsi Singkat</h3>
+                        <p class="text-slate-300 leading-relaxed text-lg">
+                            Saya merupakan siswa TKJ yang santai namun tetap bertanggung jawab. Saya senang melakukan kegiatan sederhana 
+                            dan belajar hal baru sesuai minat. Hobi saya bermain game terutama Mobile Legends &amp; Free Fire
+                            dan mendengarkan musik di waktu luang.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <!-- Minat -->
+                        <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-7">
+                            <h4 class="flex items-center gap-3 text-cyan-300 mb-6"><i class="fas fa-heart"></i> Minat &amp; Hal yang Saya Sukai</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">Editing</span>
+                                <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">JKT48</span>
+                                <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">Cars</span>
+                                <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">Playing Games</span>
+                                <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">Films</span>
+                                <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">Mendengarkan Musik</span>
+                                <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">Foods</span>
+                            </div>
+                        </div>
+
+                        <!-- Cita-cita -->
+                        <div class="bg-gradient-to-br from-cyan-900/40 to-blue-900/40 border border-cyan-400/30 rounded-3xl p-7 flex flex-col justify-between">
+                            <h4 class="text-2xl font-semibold mb-4">Cita-cita</h4>
+                            <div class="text-4xl font-bold text-cyan-300 leading-none mb-4">Be Successful</div>
+                            <p class="text-slate-300">Menjadi pribadi yang sukses dalam berkarir. Agar bisa mempunyai rumah, kendaraan, dan mendapatkan hal-hal yang kita impikan dengan hasil kerja keras sendiri. Serta membahagiakan orang tua dan keluarga di masa depan.
+                            </p>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center mb-4">Keahlian Saya</h2>
+        <p class="text-center text-cyan-200 mb-16">Skill yang saya kuasai</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+            <!-- 1. Editing -->
+            <div class="group bg-slate-900 hover:bg-gradient-to-br hover:from-cyan-900/30 hover:to-slate-800 border border-transparent hover:border-cyan-400 rounded-3xl p-8 text-center transition-all hover:-translate-y-2">
+                <i class="fas fa-pen-to-square text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                <h4 class="font-semibold text-xl">Editing</h4>
+                <p class="text-slate-400 text-sm mt-2">Video, Foto, & Desain</p>
+            </div>
+
+            <!-- 2. Komunikasi -->
+            <div class="group bg-slate-900 hover:bg-gradient-to-br hover:from-cyan-900/30 hover:to-slate-800 border border-transparent hover:border-cyan-400 rounded-3xl p-8 text-center transition-all hover:-translate-y-2">
+                <i class="fas fa-comments text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                <h4 class="font-semibold text-xl">Komunikasi</h4>
+                <p class="text-slate-400 text-sm mt-2">Presentasi & Kolaborasi</p>
+            </div>
+
+            <!-- 3. Konfigurasi -->
+            <div class="group bg-slate-900 hover:bg-gradient-to-br hover:from-cyan-900/30 hover:to-slate-800 border border-transparent hover:border-cyan-400 rounded-3xl p-8 text-center transition-all hover:-translate-y-2">
+                <i class="fas fa-cog text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                <h4 class="font-semibold text-xl">Konfigurasi</h4>
+                <p class="text-slate-400 text-sm mt-2">Router, Server, & Sistem</p>
+            </div>
+
+            <!-- 4. Instalasi -->
+            <div class="group bg-slate-900 hover:bg-gradient-to-br hover:from-cyan-900/30 hover:to-slate-800 border border-transparent hover:border-cyan-400 rounded-3xl p-8 text-center transition-all hover:-translate-y-2">
+                <i class="fas fa-plug text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                <h4 class="font-semibold text-xl">Instalasi</h4>
+                <p class="text-slate-400 text-sm mt-2">Jaringan & Perangkat (Debian, Linux &amp; Windows)</p>
+            </div>
+
+            <!-- 5. Kerja Sama Tim -->
+            <div class="group bg-slate-900 hover:bg-gradient-to-br hover:from-cyan-900/30 hover:to-slate-800 border border-transparent hover:border-cyan-400 rounded-3xl p-8 text-center transition-all hover:-translate-y-2">
+                <i class="fas fa-users text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                <h4 class="font-semibold text-xl">Kerja Sama Tim</h4>
+                <p class="text-slate-400 text-sm mt-2">Kolaborasi Proyek</p>
+            </div>
+
+            <!-- 6. Manajemen Uang -->
+            <div class="group bg-slate-900 hover:bg-gradient-to-br hover:from-cyan-900/30 hover:to-slate-800 border border-transparent hover:border-cyan-400 rounded-3xl p-8 text-center transition-all hover:-translate-y-2">
+                <i class="fas fa-money-bill-wave text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                <h4 class="font-semibold text-xl">Manajemen Uang</h4>
+                <p class="text-slate-400 text-sm mt-2">Budget & Keuangan</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- PORTOFOLIO -->
+    <section id="portofolio" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-4">Portofolio</h2>
+            <p class="text-center text-cyan-200 mb-16">Hasil kerja praktikum dan proyek terbaik saya</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <!-- Card akan di-generate oleh JS agar lebih dinamis -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGALAMAN / PROJECT -->
+    <section id="pengalaman" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-4">Pengalaman &amp; Project</h2>
+            <p class="text-center text-cyan-200 mb-16">Perjalanan belajar dan proyek nyata yang pernah saya kerjakan</p>
+
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 transition-all">
+                    <div class="md:w-28 text-cyan-400 font-mono text-sm flex-shrink-0">2024</div>
+                    <div class="flex-1">
+                        <h4 class="text-2xl font-semibold">Ujian Praktik Seni Budaya dan Keterampilan • kelas 9 </h4>
+                        <p class="text-slate-400 mt-2">Membuat Seni Kabaret</p>
+                    </div>
+                    <div class="text-emerald-400 font-medium flex items-center gap-2"><i class="fas fa-check-circle"></i> Selesai</div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 transition-all">
+                    <div class="md:w-28 text-cyan-400 font-mono text-sm flex-shrink-0">2024 - 2026</div>
+                    <div class="flex-1">
+                        <h4 class="text-2xl font-semibold">Tugas & Project Sekolah</h4>
+                        <p class="text-slate-400 mt-2">Konfigurasi, Instalasi, Rakit PC & DLL.</p>
+                    </div>
+                    <div class="text-emerald-400 font-medium flex items-center gap-2"><i class="fas fa-check-circle"></i> Selesai</div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 transition-all">
+                    <div class="md:w-28 text-cyan-400 font-mono text-sm flex-shrink-0">2025</div>
+                    <div class="flex-1">
+                        <h4 class="text-2xl font-semibold">Project Pagelaran • Mapel Bahasa Sunda</h4>
+                        <p class="text-slate-400 mt-2">Pagelaran Drama Cerita Wayang Ramayana</p>
+                    </div>
+                    <div class="text-emerald-400 font-medium flex items-center gap-2"><i class="fas fa-check-circle"></i> Selesai</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 transition-all">
+                    <div class="md:w-28 text-cyan-400 font-mono text-sm flex-shrink-0">2024 &amp; 2026</div>
+                    <div class="flex-1">
+                        <h4 class="text-2xl font-semibold">Kegiatan Kunjungan Industri</h4>
+                        <p class="text-slate-400 mt-2">2024 : Kunjin ke BNET di Karawang &amp; 2026 : Kunjin ke ITB (Jurusan STEI)</p>
+                    </div>
+                    <div class="text-emerald-400 font-medium flex items-center gap-2"><i class="fas fa-check-circle"></i> Selesai</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 transition-all">
+                    <div class="md:w-28 text-cyan-400 font-mono text-sm flex-shrink-0">2025</div>
+                    <div class="flex-1">
+                        <h4 class="text-2xl font-semibold">Porak Lomba Mobile Legends Bidang Esports</h4>
+                        <p class="text-slate-400 mt-2">Juara 1 Lomba Esports - Mobile Legends: Bang Bang</p>
+                    </div>
+                    <div class="text-amber-400 font-medium flex items-center gap-2"><i class="fas fa-trophy"></i> Juara 1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Form -->
+                <div>
+                    <h2 class="text-5xl font-bold mb-4">Mari Terhubung!</h2>
+                    <p class="text-slate-300 mb-10">Kirimkan pesan atau tanya apa saja tentang keseharian, pengalaman, atau sekadar ngobrol.</p>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <input type="text" id="nama" placeholder="Nama Lengkap" 
+                                   class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-3xl px-7 py-6 outline-none text-lg">
+                        </div>
+                        <div>
+                            <input type="email" id="email" placeholder="Email atau WhatsApp" 
+                                   class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-3xl px-7 py-6 outline-none text-lg">
+                        </div>
+                        <div>
+                            <textarea id="pesan" rows="5" placeholder="Pesan kamu..." 
+                                      class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-3xl px-7 py-6 outline-none text-lg resize-y"></textarea>
+                        </div>
+                        <button type="submit"
+                                class="w-full bg-gradient-to-r from-cyan-400 to-blue-600 py-6 text-xl font-semibold rounded-3xl hover:shadow-2xl hover:shadow-cyan-400/40 transition-all">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Kontak -->
+                <div class="flex flex-col justify-between">
+                    <div class="space-y-8">
+                        <a href="mailto:rafael.alif@smkn1bdg.sch.id" 
+                           class="flex items-center gap-6 group">
+                            <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-3xl group-hover:bg-cyan-400 group-hover:text-slate-900 transition-colors">
+                                ✉️
+                            </div>
+                            <div>
+                                <p class="font-medium text-xl">Email</p>
+                                <p class="text-cyan-300">akurafael11@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://wa.me/6281234567890?text=Halo%20Rafael,%20saya%20tertarik%20dengan%20portofolio%20kamu!" 
+                           target="_blank"
+                           class="flex items-center gap-6 group">
+                            <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-3xl group-hover:bg-emerald-400 group-hover:text-slate-900 transition-colors">
+                                💬
+                            </div>
+                            <div>
+                                <p class="font-medium text-xl">WhatsApp</p>
+                                <p class="text-cyan-300">+62 813-2131-9741</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://instagram.com/r.ramadhn__" 
+                           target="_blank"
+                           class="flex items-center gap-6 group">
+                            <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-3xl group-hover:bg-pink-400 group-hover:text-slate-900 transition-colors">
+                                📸
+                            </div>
+                            <div>
+                                <p class="font-medium text-xl">Instagram</p>
+                                <p class="text-cyan-300">@r.ramadhn__</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="text-sm text-slate-400 mt-12">
+                        Terima kasih sudah mengunjungi website saya.<br>
+                        Semoga impian kita terwujud di masa depan! 🌐
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 text-center text-xs text-slate-400">
+            © 2026 Rafael Alif • Portofolio Personal Branding TKJ • Dibuat dengan ❤️ dan Tailwind CSS
+        </div>
+    </footer>
+
+    <!-- MODAL PORTOFOLIO -->
+    <div id="portfolio-modal" onclick="if(event.target.id === 'portfolio-modal') closeModal()" 
+         class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[9999] p-4">
+        <div onclick="event.stopImmediatePropagation()" 
+             class="bg-slate-900 max-w-3xl w-full rounded-3xl overflow-hidden">
+            <div class="relative">
+                <img id="modal-image" src="" alt="" class="w-full max-h-[420px] object-cover">
+                <button onclick="closeModal()" 
+                        class="absolute top-6 right-6 text-4xl text-white/80 hover:text-white bg-black/40 hover:bg-black/70 w-12 h-12 rounded-2xl flex items-center justify-center transition-colors">
+                    ✕
+                </button>
+            </div>
+            <div class="p-8">
+                <h3 id="modal-title" class="text-3xl font-bold mb-3"></h3>
+                <p id="modal-description" class="text-slate-300 leading-relaxed"></p>
+                <div class="mt-8 flex gap-4">
+                    <button onclick="closeModal()" 
+                            class="flex-1 border border-white/30 py-4 rounded-3xl font-medium">Tutup</button>
+                    <a id="modal-link" href="#" target="_blank" 
+                       class="flex-1 bg-cyan-400 text-slate-900 py-4 rounded-3xl font-semibold text-center">Lihat Full Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
