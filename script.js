@@ -34,14 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Portfolio Data (bisa diganti gambar dengan foto asli kamu)
     const portfolioItems = [
         {
-            
-        id: 1,
-        title: "Biaya Pemasangan Kabel FO",
-        description: "LKPD TJK N 17 - Perhitungan biaya pemasangan kabel Fiber Optic beserta dokumentasi teknis lengkap. Termasuk analisis material dan estimasi biaya proyek.",
-        image: "images/project1.jpg",     // Ganti dengan foto kamu
-        link: "#"
-    }
-];
+            id: 1,
+            title: "Blogger",
+            description: "Implementasi pembuatan dan pengelolaan Lembar Kerja Peserta Didik (LKPD) berbasis digital pada bidang Teknik Jaringan Komputer dan Telekomunikasi. Seluruh konten disusun, dipublikasikan, dan diorganisasi secara sistematis melalui platform pembelajaran dengan fitur penjadwalan dan monitoring interaksi.",
+            image: "images/project1.jpg",
+            link: "#"
+        },
         {
             id: 2,
             title: "NAT Static + Port Forwarding",
