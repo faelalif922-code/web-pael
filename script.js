@@ -129,7 +129,7 @@ function showPortfolioModal(id) {
         1: {
             title: "Blogger",
             description: "Implementasi pembuatan dan pengelolaan Lembar Kerja Peserta Didik (LKPD) berbasis digital pada bidang Teknik Jaringan Komputer dan Telekomunikasi. Seluruh konten disusun, dipublikasikan, dan diorganisasi secara sistematis melalui platform pembelajaran dengan fitur penjadwalan dan monitoring interaksi.",
-            image: "https://picsum.photos/id/201/1200/800"
+            image: "images/project1.jpg"
         },
         2: {
             title: "NAT Static + Port Forwarding",
