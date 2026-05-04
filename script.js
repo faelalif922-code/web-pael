@@ -34,12 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Portfolio Data (bisa diganti gambar dengan foto asli kamu)
     const portfolioItems = [
         {
-            id: 1,
-            title: "Lab Routing RIP",
-            description: "Implementasi dynamic routing RIP v2 menggunakan Cisco Packet Tracer. 5 router terhubung sempurna dengan full connectivity.",
-            image: "https://picsum.photos/id/201/800/600",
-            link: "#"
-        },
+            
+        id: 1,
+        title: "Biaya Pemasangan Kabel FO",
+        description: "LKPD TJK N 17 - Perhitungan biaya pemasangan kabel Fiber Optic beserta dokumentasi teknis lengkap. Termasuk analisis material dan estimasi biaya proyek.",
+        image: "images/project1.jpg",     // Ganti dengan foto kamu
+        link: "#"
+    }
+];
         {
             id: 2,
             title: "NAT Static + Port Forwarding",
@@ -127,8 +129,8 @@ function showPortfolioModal(id) {
     // Data portfolio (sama dengan array di atas)
     const items = {
         1: {
-            title: "Lab Routing RIP",
-            description: "Implementasi dynamic routing RIP v2 menggunakan Cisco Packet Tracer. 5 router terhubung sempurna dengan full connectivity. Termasuk tabel routing yang benar dan ping test berhasil 100%.",
+            title: "Blogger",
+            description: "Implementasi pembuatan dan pengelolaan Lembar Kerja Peserta Didik (LKPD) berbasis digital pada bidang Teknik Jaringan Komputer dan Telekomunikasi. Seluruh konten disusun, dipublikasikan, dan diorganisasi secara sistematis melalui platform pembelajaran dengan fitur penjadwalan dan monitoring interaksi.",
             image: "https://picsum.photos/id/201/1200/800"
         },
         2: {
