@@ -79,7 +79,7 @@ const portfolioItems = [
     }
 ];
 
-// Render Portfolio Cards
+// Render Portfolio Cards - Versi Landscape
 function renderPortfolio() {
     const grid = document.getElementById('portfolio-grid');
     if (!grid) return;
@@ -87,23 +87,19 @@ function renderPortfolio() {
     let html = '';
     portfolioItems.forEach(item => {
         html += `
-            <div class="portfolio-card bg-slate-800 border border-white/10 hover:border-cyan-400 rounded-3xl overflow-hidden transition-all hover:-translate-y-2">
+            <div onclick="showPortfolioModal(${item.id})" 
+                 class="portfolio-card cursor-pointer bg-slate-800 border border-white/10 hover:border-cyan-400 rounded-3xl overflow-hidden transition-all hover:-translate-y-2">
                 
-                <img src="${item.image}" 
-                     alt="${item.title}"
-                     class="w-full h-64 md:h-80 object-cover">
+                <!-- Container Landscape -->
+                <div class="relative aspect-video bg-slate-950">  
+                    <img src="${item.image}" 
+                         alt="${item.title}"
+                         class="w-full h-full object-cover">
+                </div>
 
                 <div class="p-7">
                     <h3 class="text-2xl font-bold mb-3">${item.title}</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed line-clamp-3 mb-6">
-                        ${item.description}
-                    </p>
-                    
-                    <a href="${item.link}" target="_blank" 
-                       class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-2xl transition-all">
-                        <i class="fas fa-external-link-alt"></i>
-                        Lihat Project
-                    </a>
+                    <p class="text-slate-300 text-sm leading-relaxed line-clamp-3">${item.description}</p>
                 </div>
             </div>
         `;
