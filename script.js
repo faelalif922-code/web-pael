@@ -50,6 +50,7 @@ const portfolioItems = [
         title: "NAT Static + Port Forwarding",
         description: "Konfigurasi NAT Static dan Port Forwarding pada Mikrotik RouterOS agar server lokal bisa diakses dari internet.",
         image: "images/nat-static.jpg"   // ganti dengan foto kamu nanti
+        link: "https://rafaelaliframadhanxtjkt2.blogspot.com"
     },
 
     {
@@ -65,7 +66,7 @@ const portfolioItems = [
         description: "Desain dan simulasi topologi jaringan lengkap SMK Negeri 1 Bandung dengan VLAN, DHCP, dan Wireless.",
         image: "images/topologi-sekolah.jpg"
     },
-    
+
     {
         id: 5,
         title: "Konfigurasi Mikrotik Hotspot",
