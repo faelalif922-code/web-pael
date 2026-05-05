@@ -42,7 +42,7 @@ const portfolioItems = [
         id: 1,
         title: "Blogger LKPD Digital",
         description: "Implementasi pembuatan dan pengelolaan Lembar Kerja Peserta Didik (LKPD) berbasis digital pada bidang Teknik Jaringan Komputer dan Telekomunikasi.",
-        image: "images/blogger.jpg"
+        image: "images/bloger.jpg"
     },
     {
         id: 2,
