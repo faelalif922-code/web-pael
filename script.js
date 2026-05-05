@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             title: "Blogger",
             description: "Implementasi pembuatan dan pengelolaan Lembar Kerja Peserta Didik (LKPD) berbasis digital pada bidang Teknik Jaringan Komputer dan Telekomunikasi. Seluruh konten disusun, dipublikasikan, dan diorganisasi secara sistematis melalui platform pembelajaran dengan fitur penjadwalan dan monitoring interaksi.",
-            image: "images/project1.jpg",
+            image: "images/blogger.jpg",
             link: "#"
         },
         {
