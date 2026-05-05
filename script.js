@@ -44,24 +44,28 @@ const portfolioItems = [
         description: "Implementasi pembuatan dan pengelolaan Lembar Kerja Peserta Didik (LKPD) berbasis digital pada bidang Teknik Jaringan Komputer dan Telekomunikasi.",
         image: "images/bloger.jpg"   // ganti dengan foto kamu nanti
     },
+
     {
         id: 2,
         title: "NAT Static + Port Forwarding",
         description: "Konfigurasi NAT Static dan Port Forwarding pada Mikrotik RouterOS agar server lokal bisa diakses dari internet.",
         image: "images/nat-static.jpg"   // ganti dengan foto kamu nanti
     },
+
     {
         id: 3,
         title: "Website Portofolio Pribadi",
         description: "Membuat website personal branding responsif ini menggunakan HTML, Tailwind CSS, dan JavaScript.",
         image: "images/website-portofolio.jpg"
     },
+
     {
         id: 4,
         title: "Topologi Jaringan Sekolah",
         description: "Desain dan simulasi topologi jaringan lengkap SMK Negeri 1 Bandung dengan VLAN, DHCP, dan Wireless.",
         image: "images/topologi-sekolah.jpg"
     },
+    
     {
         id: 5,
         title: "Konfigurasi Mikrotik Hotspot",
