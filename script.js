@@ -43,13 +43,13 @@ const portfolioItems = [
         id: 1,
         title: "Blogger LKPD Digital",
         description: "Implementasi pembuatan dan pengelolaan Lembar Kerja Peserta Didik (LKPD) berbasis digital.",
-        image: "images/blogger.jpg"
+        image: "images/bloger.jpg"
     },
     {
         id: 2,
-        title: "NAT Static + Port Forwarding",
-        description: "Konfigurasi NAT Static dan Port Forwarding pada Mikrotik RouterOS.",
-        image: "images/nat-static.jpg"
+        title: "PKL pada Mapel PKK",
+        description: "Melakukan PKL di Hiway Mediatech, melakukan proses crimping straight-through, dan berkontribusi dalam proyek pemasangan CCTV.",
+        image: "images/pkl.jpg"
     },
     {
         id: 3,
