@@ -92,18 +92,23 @@
                     Siap berkembang dan menghadapi tantangan baru.
                 </p>
 
-                <div class="flex flex-wrap gap-4">
-                    <a onclick="smoothScrollTo('portofolio')" 
-                       class="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-500 hover:to-blue-700 px-9 py-5 rounded-3xl font-semibold text-lg flex items-center gap-3 shadow-xl shadow-cyan-500/30 transition-all hover:scale-105">
-                        <i class="fas fa-briefcase"></i>
-                        Lihat Portofolio
-                    </a>
-                    <a onclick="smoothScrollTo('kontak')" 
-                       class="border-2 border-white/70 hover:border-cyan-300 px-9 py-5 rounded-3xl font-semibold text-lg flex items-center gap-3 transition-all hover:scale-105">
-                        <i class="fas fa-paper-plane"></i>
-                        Hubungi Saya
-                    </a>
-                </div>
+                <div class="flex flex-wrap gap-4 mt-8">
+    <!-- Tombol Lihat Portofolio -->
+    <a onclick="smoothScrollTo('portofolio')" 
+       class="cursor-pointer bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 rounded-3xl flex items-center gap-3 transition-all active:scale-95">
+        <i class="fas fa-briefcase"></i>
+        Lihat Portofolio
+    </a>
+
+    <!-- Tombol Hubungi Saya -->
+    <a onclick="smoothScrollTo('kontak')" 
+       class="cursor-pointer border-2 border-white/70 hover:border-cyan-300 font-semibold px-8 py-4 rounded-3xl flex items-center gap-3 transition-all active:scale-95">
+        <i class="fas fa-paper-plane"></i>
+        Hubungi Saya
+    </a>
+</div>
+
+                
 
                 <!-- Social Proof -->
                 <div class="flex items-center gap-8 text-sm">

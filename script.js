@@ -106,3 +106,50 @@ function renderPortfolio() {
     });
     grid.innerHTML = html;
 }
+
+// =============================================
+// FUNGSI TAMBAHAN
+// =============================================
+
+// Smooth Scroll
+function smoothScrollTo(section) {
+    const el = document.getElementById(section);
+    if (el) {
+        el.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('mobile-menu-btn').querySelector('i');
+    
+    if (menu && icon) {
+        menu.classList.toggle('hidden');
+        
+        if (!menu.classList.contains('hidden')) {
+            icon.classList.replace('fa-bars', 'fa-times');
+        } else {
+            icon.classList.replace('fa-times', 'fa-bars');
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ... semua kode render portfolio, contact form, dll
+});
+
+const portfolioItems = [ ... ];
+
+// Render Portfolio
+function renderPortfolio() { ... }
+
+// Modal Function
+function showPortfolioModal(id) { ... }
+
+// ←←← LETAKKAN DISINI (paling bawah)
+function smoothScrollTo(section) { ... }
+function toggleMobileMenu() { ... }
