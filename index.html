@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <style>
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(50px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease;
+    }
+
+    .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .portfolio-card {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .portfolio-card:hover {
+        transform: translateY(-15px) scale(1.04);
+        box-shadow: 0 30px 60px -15px rgb(103 232 249 / 0.5);
+    }
+
+    .hero-photo {
+        transition: all 0.8s ease;
+    }
+
+    .hero-photo:hover {
+        transform: scale(1.08) rotate(4deg);
+    }
+
+    .btn-hover {
+        transition: all 0.4s ease;
+    }
+
+    .btn-hover:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px -5px rgb(103 232 249 / 0.4);
+    }
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portofolio Rafael Alif - Siswa TKJ yang passion di dunia jaringan & web">
@@ -23,7 +71,7 @@
                 <div class="w-9 h-9 bg-gradient-to-br from-blue-400 to-white600 rounded-2xl flex items-center justify-center text-xl shadow-inner">
                     💻
                 </div>
-                <h1 class="text-2xl font-bold tracking-tighter tex-white-300">Rafael Alif Ramadhan</h1>
+                <h1 class="text-2xl font-bold tracking-tighter tex-white-300">Rafael</h1>
             </div>
 
             <!-- Desktop Menu -->
