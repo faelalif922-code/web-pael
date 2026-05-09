@@ -3,8 +3,9 @@
 // =============================================
 
 document.addEventListener('DOMContentLoaded', () => {
-    
-    renderPortfolio();
+    renderPortfolio();   // ← Pastikan baris ini ada
+    // ... kode lain
+});
 
     // Contact Form
     const form = document.getElementById('contact-form');
@@ -79,27 +80,22 @@ const portfolioItems = [
     }
 ];
 
-// Render Portfolio Cards - Versi Landscape
+// Render Portfolio
 function renderPortfolio() {
     const grid = document.getElementById('portfolio-grid');
-    if (!grid) return;
+    if (!grid) {
+        console.error("portfolio-grid tidak ditemukan!");
+        return;
+    }
 
     let html = '';
     portfolioItems.forEach(item => {
         html += `
-            <div onclick="showPortfolioModal(${item.id})" 
-                 class="portfolio-card cursor-pointer bg-slate-800 border border-white/10 hover:border-cyan-400 rounded-3xl overflow-hidden transition-all hover:-translate-y-2">
-                
-                <!-- Container Landscape -->
-                <div class="relative aspect-video bg-slate-950">  
-                    <img src="${item.image}" 
-                         alt="${item.title}"
-                         class="w-full h-full object-cover">
-                </div>
-
+            <div onclick="showPortfolioModal(${item.id})" class="cursor-pointer bg-slate-800 border border-white/10 hover:border-cyan-400 rounded-3xl overflow-hidden">
+                <img src="${item.image}" alt="${item.title}" class="w-full h-64 object-cover">
                 <div class="p-7">
                     <h3 class="text-2xl font-bold mb-3">${item.title}</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed line-clamp-3">${item.description}</p>
+                    <p class="text-slate-300 text-sm">${item.description}</p>
                 </div>
             </div>
         `;
