@@ -3,114 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Rafael Alif - Siswa TKJ yang passion di dunia jaringan & web">
-    <title>Personal Website | Pael</title>
+    <title>Rafael Alif Ramadhan | Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    
     <style>
-        :root {
-            --emerald: 16 185 129;
+        .neon-cyan {
+            text-shadow: 0 0 15px #67e8f9,
+                         0 0 30px #22d3ee,
+                         0 0 50px #67e8f9;
         }
-        .neon-emerald {
-            text-shadow: 0 0 15px rgb(var(--emerald)),
-                         0 0 30px rgb(var(--emerald));
+        
+        .neon-glow {
+            box-shadow: 0 0 20px #67e8f9,
+                        0 0 40px #22d3ee;
+        }
+        
+        .hero-photo {
+            transition: all 0.8s ease;
+            box-shadow: 0 0 50px rgba(103, 232, 249, 0.6);
+        }
+        .hero-photo:hover {
+            transform: scale(1.05) rotate(3deg);
+            box-shadow: 0 0 70px rgba(103, 232, 249, 0.8);
+        }
+        
+        .portfolio-card {
+            transition: all 0.5s ease;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgba(103, 232, 249, 0.6);
         }
     </style>
 </head>
 <body class="bg-slate-950 text-white overflow-x-hidden">
 
     <!-- NAVBAR -->
-    <nav class="bg-slate-900/95 backdrop-blur-md border-b border-emerald-500/20 sticky top-0 z-50">
+    <nav class="bg-slate-900/95 backdrop-blur-md border-b border-cyan-500/20 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-9 h-9 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center text-xl shadow-inner">
-                    💻
-                </div>
-                <h1 class="text-2xl font-bold tracking-tighter text-emerald-300">Rafael</h1>
+                <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center text-xl">💻</div>
+                <h1 class="text-2xl font-bold tracking-tighter text-cyan-300">Rafael Alif</h1>
             </div>
-
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#beranda" onclick="smoothScrollTo('beranda')" class="hover:text-emerald-400 transition-colors">Beranda</a>
-                <a href="#tentang" onclick="smoothScrollTo('tentang')" class="hover:text-emerald-400 transition-colors">Tentang Saya</a>
-                <a href="#keahlian" onclick="smoothScrollTo('keahlian')" class="hover:text-emerald-400 transition-colors">Keahlian</a>
-                <a href="#portofolio" onclick="smoothScrollTo('portofolio')" class="hover:text-emerald-400 transition-colors">Portofolio</a>
-                <a href="#pengalaman" onclick="smoothScrollTo('pengalaman')" class="hover:text-emerald-400 transition-colors">Pengalaman</a>
-                <a href="#kontak" onclick="smoothScrollTo('kontak')" class="hover:text-emerald-400 transition-colors">Kontak</a>
+                <a href="#beranda" onclick="smoothScrollTo('beranda')" class="hover:text-cyan-400">Beranda</a>
+                <a href="#tentang" onclick="smoothScrollTo('tentang')" class="hover:text-cyan-400">Tentang Saya</a>
+                <a href="#keahlian" onclick="smoothScrollTo('keahlian')" class="hover:text-cyan-400">Keahlian</a>
+                <a href="#portofolio" onclick="smoothScrollTo('portofolio')" class="hover:text-cyan-400">Portofolio</a>
+                <a href="#kontak" onclick="smoothScrollTo('kontak')" class="hover:text-cyan-400">Kontak</a>
             </div>
-
-            <button id="mobile-menu-btn" class="md:hidden text-3xl text-emerald-300 hover:text-emerald-400 transition-colors">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </nav>
 
     <!-- BERANDA -->
     <section id="beranda" class="min-h-screen flex items-center relative bg-slate-950">
-        <div class="absolute inset-0 bg-[radial-gradient(at_bottom_right,#10b981_0%,transparent_70%)] opacity-20"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(at_bottom_right,#22d3ee_0%,transparent_70%)] opacity-20"></div>
         
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10 pt-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pt-16 relative z-10">
             <div class="space-y-8">
-                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-6 py-2 rounded-3xl text-sm font-medium border border-emerald-300/30">
-                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                    Kiaracondong, Kota Bandung
-                </div>
-                
-                <h1 class="text-6xl md:text-7xl font-bold leading-none tracking-tighter neon-emerald">
-                    Halo, saya<br><span class="bg-gradient-to-r from-emerald-300 via-teal-300 to-amber-200 bg-clip-text text-transparent">Rafael Alif Ramadhan</span>
+                <h1 class="text-6xl md:text-7xl font-bold leading-none tracking-tighter neon-cyan">
+                    Hai, saya<br><span class="bg-gradient-to-r from-cyan-300 via-blue-300 to-cyan-400 bg-clip-text text-transparent">Rafael Alif Ramadhan</span>
                 </h1>
                 
-                <p class="text-2xl md:text-3xl text-emerald-200">
+                <p class="text-2xl md:text-3xl text-cyan-200">
                     Siswa SMK Jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT).
                 </p>
                 
                 <p class="max-w-md text-lg text-slate-300">
-                    Memiliki semangat tinggi untuk terus belajar dan meningkatkan kemampuan diri. 
-                    Terbiasa bekerja rapi, disiplin, dan fokus, serta mengutamakan hasil yang maksimal. 
-                    Siap berkembang dan menghadapi tantangan baru.
+                    Memiliki semangat tinggi untuk terus belajar dan meningkatkan kemampuan diri.
                 </p>
 
-                <div class="flex flex-wrap gap-4 mt-8">
-                    <a href="#portofolio" class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold px-8 py-4 rounded-3xl flex items-center gap-3 transition-all shadow-lg">
+                <div class="flex flex-wrap gap-4">
+                    <a href="#portofolio" class="neon-glow bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-5 rounded-3xl flex items-center gap-3">
                         <i class="fas fa-briefcase"></i> Lihat Portofolio
                     </a>
-                    <a href="#kontak" class="border-2 border-emerald-300 hover:border-white font-semibold px-8 py-4 rounded-3xl flex items-center gap-3 transition-all">
+                    <a href="#kontak" class="neon-glow border-2 border-cyan-300 hover:border-white font-semibold px-8 py-5 rounded-3xl flex items-center gap-3">
                         <i class="fas fa-paper-plane"></i> Hubungi Saya
                     </a>
-                </div>
-
-                <div class="flex items-center gap-8 text-sm">
-                    <div>
-                        <span class="block text-emerald-300 font-bold text-4xl">100+</span>
-                        <span class="text-slate-400">Proyek/Tugas</span>
-                    </div>
-                    <div>
-                        <span class="block text-emerald-300 font-bold text-4xl">4</span>
-                        <span class="text-slate-400">Sertifikasi</span>
-                    </div>
                 </div>
             </div>
 
             <div class="flex justify-center">
                 <img src="images/foto-saya.jpeg" 
                      alt="Rafael Alif"
-                     class="w-80 md:w-96 rounded-3xl shadow-2xl shadow-emerald-500/50 border-8 border-emerald-400/30 object-cover hover:rotate-3 transition-transform duration-500">
+                     class="hero-photo w-80 md:w-96 rounded-3xl border-8 border-cyan-400/30 object-cover">
             </div>
         </div>
     </section>
+       
 
-    <!-- TENTANG SAYA, KEAHLIAN, PORTOFOLIO, PENGALAMAN, KONTAK tetap sama seperti kode kamu sebelumnya -->
-    <!-- (Hanya warna cyan yang sudah saya ganti menjadi emerald) -->
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center gap-1 text-xs tracking-widest text-cyan-300/70">
+            SCROLL UNTUK MELANJUT
+            <i class="fas fa-chevron-down animate-bounce text-2xl"></i>
+        </div>
+    </section>
 
     <!-- TENTANG SAYA -->
     <section id="tentang" class="py-24 bg-slate-900">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-5xl font-bold text-center mb-4">Tentang Saya</h2>
-            <p class="text-center text-emerald-200 max-w-md mx-auto mb-16">Kenali lebih dekat siapa saya dan apa yang saya lakukan</p>
+            <p class="text-center text-cyan-200 max-w-md mx-auto mb-16">Kenali lebih dekat siapa saya dan apa yang saya lakukan</p>
 
             <div class="grid md:grid-cols-12 gap-10">
                 <!-- Data Diri -->
@@ -154,7 +148,7 @@
                     <div class="grid grid-cols-2 gap-6">
                         <!-- Minat -->
                         <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-7">
-                            <h4 class="flex items-center gap-3 text-emerald-300 mb-6"><i class="fas fa-heart"></i> Minat &amp; Hal yang Saya Sukai</h4>
+                            <h4 class="flex items-center gap-3 text-cyan-300 mb-6"><i class="fas fa-heart"></i> Minat &amp; Hal yang Saya Sukai</h4>
                             <div class="flex flex-wrap gap-3">
                                 <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">Editing</span>
                                 <span class="px-6 py-2 bg-white/10 rounded-3xl text-sm">JKT48</span>
