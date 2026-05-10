@@ -1,54 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <style>
-    @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(50px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.8s ease;
-    }
-
-    .animate-on-scroll.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .portfolio-card {
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .portfolio-card:hover {
-        transform: translateY(-15px) scale(1.04);
-        box-shadow: 0 30px 60px -15px rgb(103 232 249 / 0.5);
-    }
-
-    .hero-photo {
-        transition: all 0.8s ease;
-    }
-
-    .hero-photo:hover {
-        transform: scale(1.08) rotate(4deg);
-    }
-
-    .btn-hover {
-        transition: all 0.4s ease;
-    }
-
-    .btn-hover:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 25px -5px rgb(103 232 249 / 0.4);
-    }
-</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portofolio Rafael Alif - Siswa TKJ yang passion di dunia jaringan & web">
@@ -116,9 +68,12 @@
     </nav>
 
     <!-- BERANDA / HERO -->
-    <section id="beranda" class="min-h-screen flex items-center relative">
-        <div class="absolute inset-0 bg-[radial-gradient(at_bottom_right,#0ea5e9_0%,transparent_70%)] opacity-30"></div>
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10 pt-16">
+    <!-- ====================== BERANDA ====================== -->
+<section id="beranda" class="min-h-screen flex items-center relative bg-slate-950">
+    
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900/80 to-transparent"></div>
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pt-16 relative z-10">
             <!-- Teks Kiri -->
             <div class="space-y-8">
                 <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-6 py-2 rounded-3xl text-sm font-medium border border-cyan-300/30">
@@ -131,7 +86,7 @@
                 </h1>
                 
                 <p class="text-2xl md:text-3xl text-cyan-200">
-                    Siswa SMK Jurusan Teknik Komputer dan Jaringan (TKJ).
+                    Siswa SMK Jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT).
                 </p>
                 
                 <p class="max-w-md text-lg text-slate-300">
