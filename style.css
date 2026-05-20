@@ -1,34 +1,91 @@
-/* style.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
-/* Custom style tambahan untuk keindahan */
-#beranda {
-    background-image: 
-        linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)),
-        url('https://picsum.photos/id/1016/2000/1200');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+:root {
+    --neon-cyan: #00f5ff;
+    --neon-purple: #c026d3;
 }
 
-.portfolio-card {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+* {
+    transition: all 0.3s ease;
 }
 
-.portfolio-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 25px 50px -12px rgb(103 232 249);
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-.modal-content {
-    animation: modalPop 0.3s ease forwards;
+.title-font {
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-@keyframes modalPop {
-    0% { transform: scale(0.95); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
+.gradient-text {
+    background: linear-gradient(to right, #22d3ee, #c026d3, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Tailwind custom colors via CDN sudah di-handle di script.js */
+.neon-text {
+    text-shadow: 0 0 20px var(--neon-cyan),
+                 0 0 40px var(--neon-purple);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(to right, var(--neon-cyan), var(--neon-purple));
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.glow-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.glow-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.5), transparent);
+    transform: skewX(-25deg);
+    animation: shimmer 4s infinite;
+}
+
+@keyframes shimmer {
+    100% { transform: translateX(400%); }
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 4px;
+    height: 1.1em;
+    background: #22d3ee;
+    vertical-align: middle;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.profile-img {
+    box-shadow: 0 0 40px rgba(34, 211, 238, 0.5);
+    border: 5px solid #18181b;
+}
+
+.hero-bg {
+    background: radial-gradient(circle at center bottom, rgba(192, 38, 211, 0.25), transparent 60%);
+}
